@@ -3,6 +3,6 @@
 - name: Services
   link: services.html
 - name: About
-  link: about.md
+  link: about.html
 - name: Contact Us
   link: contact.html
