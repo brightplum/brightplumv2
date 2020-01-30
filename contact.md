@@ -1,12 +1,19 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-title: Contact Us
+layout: minimal
+# no title becasue it is clashing with the brightplum logo_brightplum
+title: Bright Plum| Contact
+permalink: /contact.html
 ---
-# Contact Us at Bright Plum
-<hr>
+<!--
+# header1
+## header 2
+###, ####, #####, ######
+
+* bullet point
+- bullet point
+1. numbered list
+
+-->
 ## Fredric Mitchell
 ### (708) 365-9711
 ### fredric@brightplum.com
