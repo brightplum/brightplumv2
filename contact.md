@@ -14,6 +14,8 @@ permalink: /contact.html
 1. numbered list
 
 -->
+# Contact Us at Bright Plum
+<hr>
 ## Fredric Mitchell
 ### (708) 365-9711
 ### fredric@brightplum.com
