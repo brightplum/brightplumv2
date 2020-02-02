@@ -1,11 +1,19 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: minimal
-title: Contact Us
-permalink: contact.html
+# no title becasue it is clashing with the brightplum logo_brightplum
+title: Bright Plum| Contact
+permalink: /contact.html
 ---
+<!--
+# header1
+## header 2
+###, ####, #####, ######
+
+* bullet point
+- bullet point
+1. numbered list
+
+-->
 # Contact Us at Bright Plum
 <hr>
 ## Fredric Mitchell
