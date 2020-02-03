@@ -4,23 +4,26 @@ layout: default
 
 <!-- PORTFOLIO -->
 <!-- For item sizes use classes .wide and .tall -->
-<div class="container mt30">
-  <div class="grid portfolio" data-gutter="5" data-columns="3">
+<section class="vc_row pt-60 pb-60">
+  <div class="container mt30">
+    <div class="grid portfolio" data-gutter="5" data-columns="3">
 
-    {% assign portfolio_items = site.data.portfolio | sort: "order" %}
-    {% for item in portfolio_items %}
-    {% if item.title %}
-    <div class="grid-item {{ item.style }} {{ item.class }}">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        <img src="{{ item.img_url }}" class="img">
-        <div class="hover">
-          <div class="centered">
-            <h5>{{ item.title }}</h5>
+      {% assign portfolio_items = site.data.portfolio | sort: "order" %}
+      {% for item in portfolio_items %}
+      {% if item.title %}
+      <div class="grid-item {{ item.style }} {{ item.class }}">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <img src="{{ item.img_url }}" class="img">
+          <div class="hover">
+            <div class="centered">
+              <h5>{{ item.title }}</h5>
+            </div>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
-
+  </div>
+</section>
 <!-- /PORTFOLIO -->
