@@ -37,11 +37,13 @@ header: Retainer Services
 <hr>
 # Staff
 We can also supplement your internal team with developers to help with maintenance, new feature development, and bug fixing.
+
 ### Junior Developer
 - Part-time - $2750 / mo
 - Full-time - $5500 / mo
 Compare to avg. Junior Dev cost of $6500 / mo
-###Senior Developer
+
+### Senior Developer
 - Part-time - $4000 / mo
 - Full-time - $7250 / mo
 Compare to avg. Senior Dev cost of $9000 / mo
