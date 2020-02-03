@@ -1,45 +1,8 @@
 ---
 layout: default
 ---
-<!-- filter -->
-<section class="vc_row pt-60 pb-60">
-  <div class="container">
-    <div class="row">
-      <div class="lqd-column col-12">
-        <h4
-          class="mt-2 mb-3 font-weight-normal lh-1"
-          data-fittext="true"
-          data-fittext-options='{ "compressor": 0.65, "maxFontSize": 72, "minFontSize": 46 }'
-          data-split-text="true"
-          data-split-options='{"type":"lines"}'
-        >
-          <strong> {{ page.title }}</strong><br>
-        </h4>
-        <p> {{content}}</p>
-<!-- end filter -->
 
-<!-- Portfolio Gallery -->
-
-<!-- <div class="container mt53">
-  <div class= "center">
-    <div class="grid portfolio" data-gutter="5" data-columns="3">
-    {% assign portfolio_items = site.data.portfolio | sort:"order" %}
-    {% for item in portfolio_items %}
-    {% if item.title %}
-      <div class="content">
-            <h3>{{ item.title }}</h3>
-              <img src="{{ item.img_url }}" alt="Good Design" style= "width: 35%">
-              <p> {{ item.content }}</p>
-          <a href="{{ item.website }}" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-black mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
-            <span>
-              <span class="btn-txt">Visit Website</span>
-            </span>
-          </a>
-
-      </div>
-      {% endif %}
-      {% endfor %} -->
-
+<!-- Filter -->
 
     <section id="blog" class="vc_row pt-44 pb-94">
 
@@ -51,6 +14,9 @@ layout: default
             <header class="fancy-title text-center mb-7">
               <h6 class="font-size-14 font-weight-bold text-uppercase text-secondary"></h6>
               <h2><span class="font-size-1-6x">Our Work</span></h2>
+<!-- filter -->
+
+<!-- Portfolio for loop -->
   {% assign portfolio_items = site.data.portfolio | sort:"order" %}
   {% for item in portfolio_items %}
   {% if item.title %}
@@ -68,7 +34,7 @@ layout: default
                   <article class="liquid-lp">
                     <figure class="liquid-lp-media ">
                       <a href="{{ item.website }}">
-                        <img src="{{ item.img_url }}" alt="BrightPlum Inc." style= "wi>
+                        <img src="{{ item.img_url }}" alt="BrightPlum Inc.">
                       </a>
                     </figure>
                     <header class="liquid-lp-header">
@@ -95,10 +61,8 @@ layout: default
         </div><!-- /.row -->
       </div><!-- /.container -->
     </section>
-<!-- End of Porfolio Gallery  -->
 
-    </div>
-  </div>
   {% endif %}
   {% endfor %}
-</div>
+
+<!-- End of Porfolio forloop  -->
