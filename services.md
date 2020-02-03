@@ -33,7 +33,7 @@ header: Retainer Services
   * Technical risk assessments
 - Up to 10 hours a month of a la carte work on the website
 - Compare to avg. CTO cost of $12000 / mo
-
+<hr>
 # Staff
 We can also supplement your internal team with developers to help with maintenance, new feature development, and bug fixing.
 ### Junior Developer

@@ -13,14 +13,15 @@ layout: default
       {% if item.title %}
       <div class="grid-item {{ item.style }} {{ item.class }}">
         <a href="{{ site.baseurl }}{{ item.url }}">
-          <img src="{{ item.img_url }}" class="img">
           <div class="hover">
             <div class="centered">
-              <h5>{{ item.title }}</h5>
+              <u><h5>{{ item.title }}</h5></u>
             </div>
           </div>
+          <img src="{{ item.img_url }}" class="img">
         </a>
       </div>
+      <hr>
       {% endif %}
       {% endfor %}
     </div>
