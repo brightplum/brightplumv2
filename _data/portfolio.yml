@@ -1,0 +1,20 @@
+class: website
+url: /portfolio/AshleyJan
+img_url: http://brightplum.com/images/portfolio/ashleyjan.png
+title: AshleyJan
+order: 1
+class: website
+url: /portfolio/albanypark
+img_url: http://brightplum.com/images/portfolio/albanypark.png
+title: The Albany Park Neighborhood Council
+order: 2
+class: website
+url: /portfolio/MIC
+img_url: http://brightplum.com/images/portfolio/musicinst.png
+title: The Music Institute of Chicago
+order: 3
+class: website
+url: /portfolio/Construction
+img_url: http://brightplum.com/images/portfolio/ccc.png
+title: Comprehensive Construction Consulting, Inc.
+order: 4
