@@ -1,20 +1,43 @@
-- class: website
+- website: https://ashleyjan.com/
   url: /portfolio/AshleyJan
   img_url: http://brightplum.com/images/portfolio/ashleyjan.png
   title: AshleyJan
   order: 1
-- class: website
+  content: "An art portfolio site showcasing the work of Chicago-born artist Ashley Jan.
+        Work performed:
+
+            Design / UX,
+            Drupal Development,
+            Hosting."
+
+- website: https://www.communitiesunited.org/
   url: /portfolio/albanypark
   img_url: http://brightplum.com/images/portfolio/albanypark.png
   title: The Albany Park Neighborhood Council
   order: 2
-- class: website
+  content: "The web home of the Chicago non-profit Albany Park Neighborhood Council.
+
+      Work performed:
+
+        UX,
+        Drupal Development,
+        Hosting."
+
+- website: https://www.musicinst.org/
   url: /portfolio/MIC
   img_url: http://brightplum.com/images/portfolio/musicinst.png
   title: The Music Institute of Chicago
   order: 3
-- class: website
+  content: "The MIC is a non-profit music institution based in Evanston, IL, a suburb of Chicago.
+
+    Work performed:
+
+      Custom Course Finder,
+      Drupal Commerce."
+
+- website: https://comprehensivecc.com/
   url: /portfolio/Construction
   img_url: http://brightplum.com/images/portfolio/ccc.png
   title: Comprehensive Construction Consulting, Inc.
   order: 4
+  content: "A small business website for a construction consulting company."

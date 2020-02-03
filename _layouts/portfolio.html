@@ -1,30 +1,46 @@
 ---
 layout: default
 ---
-
-<!-- PORTFOLIO -->
-<!-- For item sizes use classes .wide and .tall -->
+<!-- filter -->
 <section class="vc_row pt-60 pb-60">
-  <div class="container mt30">
-    <div class="grid portfolio" data-gutter="5" data-columns="3">
+  <div class="container">
+    <div class="row">
+      <div class="lqd-column col-12">
+        <h4
+          class="mt-2 mb-3 font-weight-normal lh-1"
+          data-fittext="true"
+          data-fittext-options='{ "compressor": 0.65, "maxFontSize": 72, "minFontSize": 46 }'
+          data-split-text="true"
+          data-split-options='{"type":"lines"}'
+        >
+          <strong> {{ page.title }}</strong><br>
+        </h4>
+        <p> {{content}}</p>
+<!-- end filter -->
 
-      {% assign portfolio_items = site.data.portfolio | sort: "order" %}
-      {% for item in portfolio_items %}
-      {% if item.title %}
-      <div class="grid-item {{ item.style }} {{ item.class }}">
-        <a href="{{ site.baseurl }}{{ item.url }}">
-          <div class="hover">
-            <div class="centered">
-              <u><h5>{{ item.title }}</h5></u>
-            </div>
-          </div>
-          <img src="{{ item.img_url }}" class="img">
-        </a>
+<!-- Portfolio Gallery -->
+
+<div class="container mt53">
+  <div class= "center">
+    <div class="grid portfolio" data-gutter="5" data-columns="3">
+    {% assign portfolio_items = site.data.portfolio | sort:"order" %}
+    {% for item in portfolio_items %}
+    {% if item.title %}
+      <div class="content">
+            <h3>{{ item.title }}</h3>
+              <img src="{{ item.img_url }}" alt="Good Design" style= "width: 35%">
+              <p> {{ item.content }}</p>
+          <a href="{{ item.website }}" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-black mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+            <span>
+              <span class="btn-txt">Visit Website</span>
+            </span>
+          </a>
+
       </div>
-      <hr>
       {% endif %}
       {% endfor %}
+<!-- End of Porfolio Gallery  -->
+
     </div>
   </div>
-</section>
-<!-- /PORTFOLIO -->
+</div>
