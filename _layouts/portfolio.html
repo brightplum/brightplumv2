@@ -7,12 +7,12 @@ layout: default
 <div class="container mt30">
   <div class="grid portfolio" data-gutter="5" data-columns="3">
 
-    {% assign portfolio_items = site.data.portfolio | sort:"order" %}
+    {% assign portfolio_items = site.data.portfolio | sort: "order" %}
     {% for item in portfolio_items %}
     {% if item.title %}
     <div class="grid-item {{ item.style }} {{ item.class }}">
       <a href="{{ site.baseurl }}{{ item.url }}">
-        <div class="img" data-background="{{ item.img_url }}"></div>
+        <img src="{{ item.img_url }}" class="img">
         <div class="hover">
           <div class="centered">
             <h5>{{ item.title }}</h5>
