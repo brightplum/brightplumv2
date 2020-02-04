@@ -14,13 +14,14 @@ layout: default
             <header class="fancy-title text-center mb-7">
               <h6 class="font-size-14 font-weight-bold text-uppercase text-secondary"></h6>
               <h2><span class="font-size-1-6x">Our Work</span></h2>
+            </header>
 <!-- filter -->
 
 <!-- Portfolio for loop -->
   {% assign portfolio_items = site.data.portfolio | sort:"order" %}
   {% for item in portfolio_items %}
   {% if item.title %}
-            </header>
+
 
           </div><!-- /.col-md-8 col-md-offset-2 -->
 
@@ -64,5 +65,3 @@ layout: default
 
   {% endif %}
   {% endfor %}
-
-<!-- End of Porfolio forloop  -->

@@ -1,7 +1,7 @@
 ---
-layout: minimal
+layout: contactus
 # no title becasue it is clashing with the brightplum logo_brightplum
-title: Bright Plum| Contact
+title: Contact Bright Plum
 permalink: /contact.html
 ---
 <!--
@@ -14,7 +14,7 @@ permalink: /contact.html
 1. numbered list
 
 -->
-# Contact Us at Bright Plum
+
 <hr>
 ## Fredric Mitchell
 ### (708) 365-9711
