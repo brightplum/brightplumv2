@@ -64,51 +64,16 @@
 
                           <div class="carousel-items row" data-lqd-flickity='{"cellAlign":"left","prevNextButtons":false,"buttonsAppendTo":"self","pageDots":false,"groupCells":false,"wrapAround":true,"autoPlay":3000,"pauseAutoPlayOnHover":false}'>
 
+                            {% for item in site.data.logos %}
+
                             <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-1.png"  alt="Client">
+<!--                              add 'opacity-02 reset-opacity-onhover' to figure to grey out-->
+                              <figure class="text-center ">
+                                <img src=" {{ item.image }}"  alt="Bright PLum Inc.">
                               </figure>
                             </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-2.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-3.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-4.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-5.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-6.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-4.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-5.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
-                            <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
-                                <img src="./assets/demo/clients/client-6.png"  alt="Client">
-                              </figure>
-                            </div><!-- /.carousel-item -->
+
+                            {% endfor %}
 
                           </div><!-- /.carousel-items row -->
 
