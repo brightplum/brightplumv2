@@ -1,7 +1,5 @@
 - name: Home
   link: /
-- name: Services
-  link: /services.html
 - name: Portfolio
   link: /portfolio.html
 - name: Contact Us
