@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Our Story
-  link: /ourstory.html
+  link: /#ourstory
 - name: Case Studies
   link: /casestudies.html
 - name: Contact Us

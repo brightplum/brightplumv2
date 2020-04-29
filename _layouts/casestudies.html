@@ -3,13 +3,9 @@ layout: default
 ---
 <section id="about" class="vc_row pt-70 pb-70">
     <div class="container">
-        <div class="row d-flex flex-wrap flex-row-reverse align-items-center">
+        <div class="row d-flex flex-wrap align-items-center">
 
             <div class="lqd-column col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
-
-                <figure>
-                    <img src="./assets/img/logo/logo-1.svg" alt="Ave">
-                </figure>
 
                 <h2
                         class="mt-2 mb-3 font-weight-normal lh-1"
@@ -18,19 +14,90 @@ layout: default
                         data-split-text="true"
                         data-split-options='{"type":"lines"}'
                 >
-                    <strong>good</strong> design <br>
-                    <strong>good</strong> business
+                    <strong>{{ page.bolda}}</strong> {{ page.boldb}}<br>
+                    <strong>{{ page.boldc}}</strong> {{ page.boldd}}
                 </h2>
 
-                <p class="h3 font-weight-normal pr-md-7 mr-md-7 mb-40"><i>We know that good design means good business.</i></p>
+                <p class="h3 font-weight-normal pr-md-7 mr-md-7 mb-40"><i>{{ page.contenta }}</i></p>
 
-                <p class="pr-md-7 mr-md-7 mb-60">We help our clients succeed by creating brand identities, digital experiences, and print materials that communicate clearly, achieve marketing goals, and look fantastic.</p>
+                <p class="pr-md-7 mr-md-7 mb-60">{{ page.contentb}}</p>
+<!--OPTION TO ADD A BUTTON-->
+<!--                <a href="#" class="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-14 font-weight-bold ltr-sp-025 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>-->
+<!--							<span>-->
+<!--								<span class="btn-txt">More about us</span>-->
+<!--							</span>-->
+<!--                </a>-->
 
-                <a href="#" class="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-14 font-weight-bold ltr-sp-025 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
-							<span>
-								<span class="btn-txt">More about us</span>
-							</span>
-                </a>
+            </div><!-- /.col-md-6 -->
+
+            <div class="lqd-column col-md-5 col-md-offset-1">
+
+                <div class="lqd-parallax-images">
+
+                    <div class="liquid-img-group-single" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
+                        <div class="liquid-img-group-img-container">
+                            <div class="liquid-img-container-inner"
+                                 data-parallax="true"
+                                 data-parallax-from='{"translateY":78}'
+                                 data-parallax-to='{"translateY":-78}'
+                                 data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
+                            >
+                                <figure>
+                                    <img src="{{ page.imagea }}" alt="Good Design" />
+                                </figure>
+                            </div><!-- /.liquid-img-container-inner -->
+                        </div><!-- /.liquid-img-group-img-container -->
+                    </div><!-- /.liquid-img-group-single -->
+
+                    <div class="liquid-img-group-single w-75" data-shadow-style="4" data-inview="true" data-animate-shadow="true">
+                        <div class="liquid-img-group-img-container">
+                            <div class="liquid-img-container-inner"
+                                 data-parallax="true"
+                                 data-parallax-from='{"translateY":107}'
+                                 data-parallax-to='{"translateY":-134}'
+                                 data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
+                            >
+                                <figure>
+                                    <img src="{{ page.imageb }}" alt="Good Design" />
+                                </figure>
+                            </div><!-- /.liquid-img-container-inner -->
+                        </div><!-- /.liquid-img-group-img-container -->
+                    </div><!-- /.liquid-img-group-single -->
+
+                </div><!-- /.lqd-parallax-images -->
+
+            </div><!-- /.col-md-5 col-md-offset-1 -->
+
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section id="about" class="vc_row pt-70 pb-70">
+    <div class="container">
+        <div class="row d-flex flex-wrap flex-row-reverse align-items-center">
+
+            <div class="lqd-column col-md-6" data-custom-animations="true" data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":31,"translateZ":-108,"opacity":0},"animations":{"translateY":0,"translateZ":0,"opacity":1}}'>
+
+                <h2
+                        class="mt-2 mb-3 font-weight-normal lh-1"
+                        data-fittext="true"
+                        data-fittext-options='{ "compressor": 0.65, "maxFontSize": 72, "minFontSize": 46 }'
+                        data-split-text="true"
+                        data-split-options='{"type":"lines"}'
+                >
+                    <strong>{{ page.bold1 }}</strong> {{ page.bold2 }} <br>
+                    <strong>{{ page.bold3}}</strong> {{ page.bold4 }}
+                </h2>
+
+                <p class="h3 font-weight-normal pr-md-7 mr-md-7 mb-40"><i>{{ page.content1 }}</i></p>
+
+                <p class="pr-md-7 mr-md-7 mb-60">{{ page.content2 }}</p>
+<!--OPTION TO INSERT A BUTTON-->
+<!--                <a href="#" class="btn btn-solid text-uppercase btn-md circle btn-bordered border-thin font-size-14 font-weight-bold ltr-sp-025 px-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>-->
+<!--							<span>-->
+<!--								<span class="btn-txt">More about us</span>-->
+<!--							</span>-->
+<!--                </a>-->
 
             </div><!-- /.col-md-6 -->
 
@@ -47,7 +114,7 @@ layout: default
                                  data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
                             >
                                 <figure>
-                                    <img src="./assets/demo/misc/parallax-img-1.jpg" alt="Good Design" />
+                                    <img src="{{ page.image1 }}" alt="Good Design" />
                                 </figure>
                             </div><!-- /.liquid-img-container-inner -->
                         </div><!-- /.liquid-img-group-img-container -->
@@ -62,7 +129,7 @@ layout: default
                                  data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
                             >
                                 <figure>
-                                    <img src="./assets/demo/misc/parallax-img-2.jpg" alt="Good Design" />
+                                    <img src="{{ page.image2 }}" alt="Good Design" />
                                 </figure>
                             </div><!-- /.liquid-img-container-inner -->
                         </div><!-- /.liquid-img-group-img-container -->
