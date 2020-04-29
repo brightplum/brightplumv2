@@ -1,6 +1,6 @@
 - name: Home
   link: /
-- name: Portfolio
-  link: /portfolio.html
+- name: Case Studies
+  link: /cases.html
 - name: Contact Us
   link: /contact.html

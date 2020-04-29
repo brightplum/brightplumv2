@@ -1,6 +1,19 @@
 <!doctype html>
 <html lang="en">
 {% include head.html %}
+  <style>
+    .grayscale-100 {
+      filter: grayscale(100%);
+    }
+    .logo-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      height: 100px;
+    }
+  </style>
+
 
   <body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="modern" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
 
@@ -53,7 +66,7 @@
                   </div><!-- /.row -->
                 </div><!-- /.container -->
 
-                <div class="bg-gray col-xs-12 px-0 py-4">
+                <div class="bg-gray col-xs-12 px-0 pb-0 pt-5">
 
                   <div class="container">
                     <div class="row">
@@ -67,7 +80,7 @@
                             {% for item in site.data.logos %}
 
                             <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center opacity-02 reset-opacity-onhover">
+                              <figure class="text-center grayscale-100 logo-img opacity-02">
                                 <img src=" {{ item.image }}"  alt="Bright PLum Inc.">
                               </figure>
                             </div><!-- /.carousel-item -->
