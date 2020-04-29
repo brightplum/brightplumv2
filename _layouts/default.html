@@ -9,8 +9,8 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
-      height: 100px;
+      width: 70%;
+      height: 70%;
     }
   </style>
 
@@ -25,11 +25,13 @@
         <div class="mainbar-wrap">
       		<main id="content" class="content">
             <section
-                class="vc_row fullheight d-flex flex-wrap align-items-end mb-80"
+                class="vc_row fullheight d-flex flex-wrap align-items-end mb-80 grayscale-100"
                 data-parallax="true"
                 data-parallax-options='{"parallaxBG":true}'
                 data-slideshow-bg="true"
-                data-slideshow-options='{"delay":3000,"effect":"scale","imageArray":["./banner/cloud-gate-1569012.jpg","./banner/photo-of-buildings-1823681.jpg"]}'
+                {% for item in site.data.banner %}
+                data-slideshow-options='{"delay":3000,"effect":"scale","imageArray":["{{ item.image }}"]}'
+                {% endfor %}
               >
 
                 <span class="row-bg-loader">
@@ -66,7 +68,7 @@
                   </div><!-- /.row -->
                 </div><!-- /.container -->
 
-                <div class="bg-gray col-xs-12 px-0 pb-0 pt-5">
+                <div class="bg-gray col-xs-12 px-0 py-2">
 
                   <div class="container">
                     <div class="row">
@@ -80,7 +82,7 @@
                             {% for item in site.data.logos %}
 
                             <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
-                              <figure class="text-center grayscale-100 logo-img opacity-02">
+                              <figure class="text-center grayscale-100 logo-img opacity-05">
                                 <img src=" {{ item.image }}"  alt="Bright PLum Inc.">
                               </figure>
                             </div><!-- /.carousel-item -->
