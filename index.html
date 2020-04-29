@@ -138,10 +138,19 @@ layout: default
 
 <!--Article Section-->
 		<section id="articles" class="vc_row pt-50 pb-75">
+			<style>
+				.square {
+					position: relative;
+					width: 325px;
+					height: 325px;
+					overflow: hidden;
+					border: 1px solid black;
+				}
+			</style>
 			<div class="container">
 				<div class="row">
 
-					<div class="lqd-column col-md-8 col-md-offset-2">
+					<div class="lqd-column col-md-8 col-md-offset-2 ">
 
 						<header class="fancy-title text-center mb-7">
 							<h6 class="font-size-14 font-weight-bold text-uppercase text-secondary">News & Events</h6>
@@ -149,7 +158,7 @@ layout: default
 						</header>
 
 					</div><!-- /.col-md-8 col-md-offset-2 -->
-
+					{% assign portfolio_items = site.data.portfolio %}
 					<div class="lqd-column col-md-12">
 
 						<div class="liquid-blog-posts">
@@ -157,29 +166,28 @@ layout: default
 							<div class="liquid-blog-grid row">
 
 								<div class="lqd-column col-md-4">
+
 									<article class="liquid-lp">
-										<figure class="liquid-lp-media ">
-											<a href="https://eqfordevs.substack.com/p/eq-and-the-red-queen-effect">
+										<figure class="liquid-lp-media square pt-3">
+											<a href=" {{ item.website }}">
 												<img src="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4fd2fb90-c7e4-4834-a8c4-4f9ad3737164_1200x758.jpeg" alt="V7 Digital Photo Printing">
 											</a>
 										</figure>
 										<header class="liquid-lp-header">
 											<span class="screen-reader-text">Tags </span>
 											<ul class="liquid-lp-category ">
-												<li><a href="https://eqfordevs.substack.com/p/eq-and-the-red-queen-effect" rel="category">EQ for Devs</a></li>
+												<li><a href="{{ item.website }}" rel="category">{{ item.blog }}</a></li>
 											</ul>
 											<h2 class="entry-title liquid-lp-title h5 text-uppercase font-weight-bold">
-												<a href="https://eqfordevs.substack.com/p/eq-and-the-red-queen-effect" rel="bookmark">EQ and the Red Queen Effect</a>
+												<a href="{{ item.website }}" rel="bookmark">The Self-Aware Developer</a>
 											</h2>
-											<time class="published updated liquid-lp-date font-style-italic" datetime="2019-08-16T11:33:03+00:00">November 15th, 2019</time>
 										</header>
 									</article>
-
 								</div><!-- /.col-md-4 -->
 
-								<div class="lqd-column col-md-4">
+								<div class="lqd-column col-md-4 ">
 									<article class="liquid-lp">
-										<figure class="liquid-lp-media ">
+										<figure class="liquid-lp-media square pt-3">
 											<a href="https://eqfordevs.substack.com/p/the-self-aware-developer">
 												<img src="banner/Maclom-X.png" alt="">
 											</a>
@@ -192,15 +200,14 @@ layout: default
 											<h2 class="entry-title liquid-lp-title h5 text-uppercase font-weight-bold">
 												<a href="https://eqfordevs.substack.com/p/the-self-aware-developer" rel="bookmark">The Self-Aware Developer</a>
 											</h2>
-											<time class="published updated liquid-lp-date font-style-italic" datetime="2019-08-16T11:32:46+00:00">November 8th, 2019</time>
 										</header>
 									</article>
 
 								</div><!-- /.col-md-4 -->
 
-								<div class="lqd-column col-md-4">
+								<div class="lqd-column col-md-4 ">
 									<article class="liquid-lp">
-										<figure class="liquid-lp-media ">
+										<figure class="liquid-lp-media square pt-3">
 											<a href="https://eqfordevs.substack.com/p/zen-buddhism-inspired-eq-shoshin">
 												<img src="banner/Zen.jpg" alt="">
 											</a>
@@ -213,7 +220,6 @@ layout: default
 											<h2 class="entry-title liquid-lp-title h5 text-uppercase font-weight-bold">
 												<a href="https://eqfordevs.substack.com/p/zen-buddhism-inspired-eq-shoshin" rel="bookmark">Zen Buddhism Inspired ED Shoshin</a>
 											</h2>
-											<time class="published updated liquid-lp-date font-style-italic" datetime="2019-08-16T11:32:32+00:00">November 1st, 2019</time>
 										</header>
 									</article>
 

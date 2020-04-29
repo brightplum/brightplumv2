@@ -1,5 +1,5 @@
 ---
 layout: casestudies
-permalink: /case.html
+permalink: /casestudies.html
 
 ---
